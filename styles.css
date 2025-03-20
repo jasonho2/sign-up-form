@@ -18,6 +18,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   height: 100vh;
+  background-color: #f6f8fcf3;
 }
 
 .img_container {
@@ -74,7 +75,8 @@ body {
   font-weight: bold;
   width: 100%;
   padding-left: 5%;
-  margin: 10% 0 8% 0;
+  padding-right: 5%;
+  margin: 10% 0 12px 0;
 
   & :first-child {
     margin-bottom: 2%;
@@ -105,16 +107,30 @@ body {
     margin: 1% 5% 1% 0;
 
     & label {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       font-weight: 500;
     }
   }
 
   & input {
-    border: 1px solid #e5e7ebf3;
+    border: 1px solid #e5e7eb;
     border-radius: 3px;
   }
   
+}
+
+.signup_form input {
+  & :user-invalid {
+    border: red;
+  }
+  & :hover {
+    background-color: #dbdbdbc2;
+  }
+}
+
+.signup_form input:focus {
+  outline: 1px solid blue;
+  box-shadow: -1px 0px 30px -9px rgba(0, 0, 0, 0.76);
 }
 
 .submit_button_container {
