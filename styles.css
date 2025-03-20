@@ -113,26 +113,23 @@ body {
       font-weight: 500;
     }
   }
+}
 
+.signup_form {
   & input {
     border: 1px solid #e5e7eb;
     border-radius: 3px;
   }
-  
-}
-
-.signup_form {
   & input:user-invalid {
-    border: red;
+    border: 1px solid red;
   }
   & input:hover {
     background-color: #dbdbdbc2;
   }
-}
-
-.signup_form input:focus {
-  outline: 1px solid blue;
-  box-shadow: -1px 0px 30px -9px rgba(0, 0, 0, 0.76);
+  & input:focus {
+    outline: 1px solid blue;
+    box-shadow: -1px 0px 30px -9px rgba(0, 0, 0, 0.76);
+  }
 }
 
 .submit_button_container {
